@@ -1,0 +1,42 @@
+.records {
+  width: 95vw;
+  margin: 0 auto;
+  background-color: #fefefe;
+}
+
+.records__img {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6.3rem;
+  border-bottom: 3px solid #dfe6e9;
+}
+
+.record .record__heading {
+  font-size: 5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 10rem 0rem;
+  margin-top: 20rem;
+}
+.record__contents {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30rem;
+}
+
+.contents__content a {
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.contents__content a:visited {
+  color: inherit;
+}
+
+.contents__content em {
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
