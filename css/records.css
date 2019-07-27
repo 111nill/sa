@@ -1,42 +1,70 @@
 .records {
-  width: 95vw;
-  margin: 0 auto;
-  background-color: #fefefe;
+  width: 100%;
 }
-
-.records__img {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 6.3rem;
-  border-bottom: 3px solid #dfe6e9;
+.records__contents {
+  margin-bottom: 3rem;
 }
-
-.record .record__heading {
-  font-size: 5rem;
-  letter-spacing: 0.5rem;
-  font-weight: 700;
+.records__contents h1 {
   text-align: center;
-  margin: 10rem 0rem;
-  margin-top: 20rem;
-}
-.record__contents {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 30rem;
+  font-size: 5rem;
+  margin-top: 5rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.contents__content a {
-  text-decoration: none;
-  font-size: 3rem;
-}
-
-.contents__content a:visited {
-  color: inherit;
-}
-
-.contents__content em {
-  padding: 0.5rem 2rem;
+.records__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.records__months {
+  width: 25rem;
+  height: 25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 600;
+  transition: background-color 0.5s ease-in-out;
+}
+.records__months:nth-child(1) {
+  background-image: url("../images/grid1.jpg");
+  background-size: 100% 100%;
+}
+
+.records__months:nth-child(2) {
+  background-image: url("../images/grid2.jpg");
+  background-size: 100% 100%;
+}
+.records__months:nth-child(3) {
+  background-image: url("../images/grid3.jpg");
+  background-size: 100% 100%;
+}
+.records__months:hover {
+  background: #0a3d62;
+}
+.records__months a {
+  color: #f6b93b;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
+.records__months a:hover {
+  color: #b8e994;
+}
+
+@media (max-width: 414px) {
+  .records__contents h1 {
+    font-size: 2rem;
+  }
+  .records__wrapper {
+    display: block;
+  }
+  .records__months {
+    width: 100vw;
+    height: 50vh;
+  }
 }
