@@ -1,48 +1,174 @@
 .aboutus {
-  color: #34495e;
-  width: 64rem;
-  margin: 0 auto;
-  padding: 10rem 0rem;
-  border: 4px solid #f7f7f7;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 0rem 2rem;
+  padding-bottom: 10rem;
 }
-
+.aboutus__intro {
+  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.aboutus__intro h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  word-spacing: 1rem;
+  letter-spacing: 0.5rem;
+}
+.aboutus__intro p {
+  font-size: 3rem;
+  margin: 3rem 0rem;
+  margin-bottom: 12rem;
+}
 .aboutus .aboutus__list {
+  width: 80%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
-.information {
+.pm {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
-
-.aboutus__information2 {
-  display: flex;
-  flex-direction: row-reverse;
-  align-self: flex-end;
-  margin: 3rem 0rem;
+.mc,
+.ee {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.aboutus__text {
-  display: flex;
-  flex-direction: column;
-}
-.aboutus__information2 > .aboutus__text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.aboutus__img img {
-  border-radius: 40px;
-  margin: 0rem 3rem;
+.pm__job,
+.mc__job {
+  font-size: 7rem;
+  font-weight: 600;
+  margin: 5rem 0rem;
+  text-align: center;
 }
 
-.aboutus__text {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 200%;
-}
-.aboutus__name {
+.pm__wrapper {
   display: block;
+}
+.wra .mc__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pm__img img,
+.mc__img img {
+  width: 15rem;
+  height: 20rem;
+}
+
+.pm__text,
+.mc__text,
+.ee__text {
+  color: #6b6868;
+  margin: 1rem 0rem;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+.pm__name,
+.mc__name,
+.ee__name {
+  font-weight: 600;
+  font-size: 3rem;
+  margin: 0.5rem;
+}
+
+.pm__link a {
+  color: #079992;
+  padding: 0rem 1rem;
+}
+
+.mc {
+  display: flex;
+  flex-direction: column;
+}
+
+.mc .wra {
+  display: flex;
+  justify-content: space-between;
+}
+.pm__text span,
+.mc__text span {
+  display: block;
+  text-align: center;
+}
+@media (max-width: 414px) {
+  .title__name {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .aboutus {
+    padding: 0;
+  }
+  .aboutus__intro {
+    width: 100%;
+  }
+  .aboutus__intro h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .aboutus__intro p {
+    font-size: 1.5rem;
+    margin-bottom: 6rem;
+  }
+  .aboutus .aboutus__list {
+    width: 100%;
+  }
+  .mc,
+  .ee {
+    width: 100%;
+  }
+  .pm__job,
+  .mc__job {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem 0rem;
+    text-align: center;
+    background-color: #111;
+    color: #f7f7f7;
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+  .pm__text,
+  .mc__text,
+  .ee__text {
+    color: #6b6868;
+    margin: 1rem 0rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .pm__name,
+  .mc__name,
+  .ee__name {
+    font-size: 1.5rem;
+  }
+
+  .mc {
+    display: flex;
+    flex-direction: column;
+  }
+  .mc__job {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 3rem 0rem;
+    text-align: center;
+  }
+  .mc .wra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pm__img img,
+  .ee__img img,
+  .mc__img img {
+    width: 9rem;
+    height: 12rem;
+  }
 }

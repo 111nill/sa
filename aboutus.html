@@ -6,71 +6,131 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Micro Mobility Project</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    />
   </head>
   <body>
+    <div class="toggle">
+      <i class="fa fa-bars menu" aria-hidden="true"></i>
+    </div>
     <header id="title">
       <h1 class="title__name">Micro Mobility Project</h1>
-    </header>
-    <nav class="nav-bar">
-      <ul class="nav-bar__lists lists">
-        <li class="lists__list"><a href="records.html">our Records</a></li>
-      </ul>
-    </nav>
-    <div class="sized">
-      <main class="aboutus">
-        <ul class="aboutus__list">
-          <li class="aboutus__information information">
-            <div class="aboutus__img">
-              <img src="images/aboutus/jn.jpg" width="300px" height="300px" />
-            </div>
-            <div class="aboutus__text">
-              <span class="aboutus__name">윤주녕(Project Manager) </span>
-              <span class="aboutus__title">프로젝트 총괄</span>
-              <span class="aboutus__link">Icon or whatever</span>
-            </div>
-          </li>
-          <li class="aboutus__information2 information">
-            <div class="aboutus__img">
-              <img src="images/aboutus/jn.jpg" width="300px" height="300px" />
-            </div>
-            <div class="aboutus__text">
-              <span class="aboutus__name">윤주녕</span>
-              <span class="aboutus__title">프로젝트 총괄</span>
-              <span class="aboutus__link">Icon or whatever</span>
-            </div>
-          </li>
-          <li class="aboutus__information information">
-            <div class="aboutus__img">
-              <img src="images/aboutus/jn.jpg" width="300px" height="300px" />
-            </div>
-            <div class="aboutus__text">
-              <span class="aboutus__name">윤주녕</span>
-              <span class="aboutus__title">프로젝트 총괄</span>
-              <span class="aboutus__link">Icon or whatever</span>
-            </div>
-          </li>
-          <li class="aboutus__information2 information">
-            <div class="aboutus__img">
-              <img src="images/aboutus/jn.jpg" width="300px" height="300px" />
-            </div>
-            <div class="aboutus__text">
-              <span class="aboutus__name">윤주녕</span>
-              <span class="aboutus__title">프로젝트 총괄</span>
-              <span class="aboutus__link">Icon or whatever</span>
-            </div>
-          </li>
-          <li class="aboutus__information information">
-            <div class="aboutus__img">
-              <img src="images/aboutus/jn.jpg" width="300px" height="300px" />
-            </div>
-            <div class="aboutus__text">
-              <span class="aboutus__name">윤주녕</span>
-              <span class="aboutus__title">프로젝트 총괄</span>
-              <span class="aboutus__link">Icon or whatever</span>
-            </div>
-          </li>
+      <nav class="nav-bar">
+        <ul class="nav-bar__lists lists">
+          <li class="lists__list"><a href="index.html">Home</a></li>
+          <li class="lists__list"><a href="aboutus.html">About Us</a></li>
+          <li class="lists__list"><a href="records.html">Records</a></li>
         </ul>
-      </main>
-    </div>
+      </nav>
+    </header>
+
+    <main class="aboutus">
+      <section class="aboutus__intro">
+        <h1>About Us</h1>
+        <article>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            est, consectetur distinctio repellat aperiam asperiores dolorem
+            minus ab corporis iure tenetur? In velit architecto omnis
+            reprehenderit dignissimos laboriosam iste amet.
+          </p>
+        </article>
+      </section>
+      <ul class="aboutus__list">
+        <li class="aboutus__pm pm">
+          <span class="pm__job">Project Manager</span>
+          <div class="pm__wrapper">
+            <div class="pm__img">
+              <img src="images/aboutus/jn.jpg" />
+            </div>
+            <div class="pm__text">
+              <span class="pm__name">
+                윤주녕
+              </span>
+              <span class="pm__title">프로젝트 총괄</span>
+              <span class="pm__link">
+                <a href="mailto:nyoung3616@naver.com"
+                  ><i class="far fa-envelope"></i
+                ></a>
+                <a href="https://www.instagram.com/yoon_daydreaming/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="aboutus__mc mc">
+          <span class="mc__job">Mechanical Engineer</span>
+          <div class="wra">
+            <div class="mc__wrapper">
+              <div class="mc__img">
+                <img src="images/aboutus/jn.jpg" />
+              </div>
+              <div class="mc__text">
+                <span class="mc__name">조한기 </span>
+                <span class="mc__title">바디프레임, 휠, 디자인 담당</span>
+                <span class="mc__link">Icon or whatever</span>
+              </div>
+            </div>
+            <div class="mc__wrapper">
+              <div class="mc__img">
+                <img src="images/aboutus/jn.jpg" />
+              </div>
+              <div class="mc__text">
+                <span class="mc__name">류준혁 </span>
+                <span class="mc__title">브레이크 담당</span>
+                <span class="mc__link">Icon or whatever</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="aboutus__mc mc">
+          <span class="mc__job">Electric Engineer</span>
+          <div class="wra">
+            <div class="mc__wrapper">
+              <div class="mc__img">
+                <img src="images/aboutus/jn.jpg" />
+              </div>
+              <div class="mc__text">
+                <span class="mc__name">이현수 </span>
+                <span class="mc__title">배터리 및 모터 담당</span>
+                <span class="mc__link">Icon or whatever</span>
+              </div>
+            </div>
+            <div class="mc__wrapper">
+              <div class="mc__img">
+                <img src="images/aboutus/jn.jpg" />
+              </div>
+              <div class="mc__text">
+                <span class="mc__name">오영승 </span>
+                <span class="mc__title">배터리 및 컨트롤러 담당</span>
+                <span class="mc__link">Icon or whatever</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu").click(function() {
+          $(".lists").toggleClass("active");
+        });
+      });
+    </script>
   </body>
 </html>
